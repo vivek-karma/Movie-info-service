@@ -11,6 +11,6 @@ public class MovieResource {
 
     @RequestMapping("/{movieName}")
     public Movie getMovie(@PathVariable("movieName") String movieName){
-        return new Movie("Avengers","heroes are born to save the world");
+        return new Movie(movieName,"heroes are born to save the world");
     }
 }
